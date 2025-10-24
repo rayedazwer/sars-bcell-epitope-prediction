@@ -18,11 +18,22 @@ This repository demonstrates a complete workflow for B-cell epitope prediction:
 
 The project showcases **bioinformatics, machine learning, and data analysis skills** in a hands-on educational context **only**.
 
-# How to run
+# Requirements
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn 
+- joblib (for importing / exporting the machine learning model)
+- biopython (for computing average heuristic values for protein sequence)
+
+# How to use
+## Creating the machine learning model
 1. Open the notebook 'COVID19_Prediction.ipynb' using Jupyter Notebook.
 2. Download the datasets (available on Kaggle; https://www.kaggle.com/datasets/futurecorporation/epitope-prediction).
 3. Run all cells to reproduce the analysis, trained models, and visualisations.
-4. A prompt will open requesting to paste the protein sequence, once pasted, hit enter, to get output (target, epitope (1), or non-epitope (0)).
+
+## Using the pre-trained model
+If you want to test the protein sequences directly (without retraining the models), deploy the 'SARS_BCellEpitopePrediction_Tool.ipynb' notebook in Jupyter.
 
 # Datasets
 - Original datasets used for training the model were downloaded from Kaggle.(https://www.kaggle.com/datasets/futurecorporation/epitope-prediction).
