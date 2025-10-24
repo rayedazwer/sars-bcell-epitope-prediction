@@ -35,6 +35,11 @@ The project showcases **bioinformatics, machine learning, and data analysis skil
 ## Using the pre-trained model
 If you want to test the protein sequences directly (without retraining the models), deploy the 'SARS_BCellEpitopePrediction_Tool.ipynb' notebook in Jupyter.
 
+# Note
+- The Random Forest classifier (best-performing model) is too large to commit (~90 MB).
+- Users need to run 'SARS_BCellEpitopePrediction.ipynb' to train the model and generate 'model_rf.pkl'.
+- Once generated, the 'SARS_BCellEpitopePrediction_Tool.ipynb' notebook can be used by importing 'model_rf.pkl' for predictions.
+
 # Datasets
 - Original datasets used for training the model were downloaded from Kaggle.(https://www.kaggle.com/datasets/futurecorporation/epitope-prediction).
 - Derived dataset 'peptide_features.csv' was generated from IEDB Analysis Resource (http://www.tools.iedb.org/bcell/help/).
